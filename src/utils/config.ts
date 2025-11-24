@@ -27,11 +27,11 @@ export type ConfigObj = {
 type Scope = "global" | string;
 
 // Seconds after with Skip Ad button is activated by default.
-const AD_PLAYBACK_OFFSET = 5;
+const AD_PLAYBACK_OFFSET = 0;
 export const DEFAULT_CONFIG: ConfigObj = Object.freeze({
   globalConfig: {
     timeToSkip: AD_PLAYBACK_OFFSET,
-    muteAd: false,
+    muteAd: true,
   },
   channelConfigs: {},
 });
